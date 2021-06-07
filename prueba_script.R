@@ -1,3 +1,4 @@
+install.packages("bigrquery")
 library(bigrquery)
 
 #
