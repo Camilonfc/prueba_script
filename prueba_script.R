@@ -14,5 +14,8 @@ query_results <- query_exec(sql_string, project = project_id, use_legacy_sql  = 
 df <- data.frame(query_results)
 df2 <- data.frame(df[ ,2]*5)
 
+write.csv(df,"C:/Users/cflandez/SURA INVESTMENT MANAGEMENT S.A/Code - General/SOLUCIONES/Investment Analytics - Condor-wm/PruebaGCP/Prueba GCP 202106/result0.csv", row.names = FALSE)
+write.csv(df2,"C:/Users/cflandez/SURA INVESTMENT MANAGEMENT S.A/Code - General/SOLUCIONES/Investment Analytics - Condor-wm/PruebaGCP/Prueba GCP 202106/result1.csv", row.names = FALSE)
+
 #LINK
 #https://anderfernandez.com/blog/automatizar-script-r-google-cloud/
